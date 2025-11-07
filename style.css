@@ -10,7 +10,7 @@ body {
   background-color: #fff;
 }
 
-/* ENCABEZADO */
+/* ======== HEADER ======== */
 header {
   display: flex;
   justify-content: space-between;
@@ -43,7 +43,7 @@ nav a:hover {
   border-bottom: 2px solid #000;
 }
 
-/* SECCIÓN PRINCIPAL */
+/* ======== HERO ======== */
 .hero {
   position: relative;
   height: 100vh;
@@ -64,12 +64,11 @@ nav a:hover {
 }
 
 .overlay h2 {
-  font-size: 2em;
-  letter-spacing: 1px;
+  font-size: 2.2em;
   text-transform: uppercase;
   background: rgba(0,0,0,0.4);
   display: inline-block;
-  padding: 0.3em 0.6em;
+  padding: 0.4em 0.8em;
 }
 
 .boton {
@@ -87,15 +86,17 @@ nav a:hover {
   color: #000;
 }
 
-/* PRODUCTOS */
-.productos {
-  padding-top: 8em;
+/* ======== CATÁLOGOS ======== */
+.catalogo {
+  padding: 8em 2em 4em 2em;
   text-align: center;
 }
 
-.productos h2 {
+.catalogo h2 {
   margin-bottom: 1em;
   font-size: 1.8em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .grid {
@@ -103,72 +104,63 @@ nav a:hover {
   justify-content: center;
   flex-wrap: wrap;
   gap: 2em;
-  padding: 2em;
+  margin-top: 2em;
+}
+
+.item {
+  text-align: center;
 }
 
 .item img {
-  width: 250px;
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
   border-radius: 8px;
+  transition: transform 0.3s ease;
 }
 
-.links {
-  margin-top: 2em;
+.item img:hover {
+  transform: scale(1.03);
+}
+
+.item h3 {
+  margin-top: 0.5em;
   font-size: 1em;
 }
 
-.links a {
+/* ======== VIDEO ======== */
+.video {
+  text-align: center;
+  padding: 5em 0;
+}
+
+.video h3 {
+  margin-bottom: 1.5em;
+  font-size: 1.6em;
+}
+
+/* ======== FOOTER ======== */
+footer {
+  background-color: #f8f8f8;
+  text-align: center;
+  padding: 2em;
+  font-size: 0.9em;
+}
+
+footer a {
   color: #000;
   text-decoration: none;
 }
 
-.links a:hover {
+footer a:hover {
   text-decoration: underline;
 }
 
-/* CONTACTO */
-.contacto {
-  padding-top: 8em;
-  text-align: center;
-}
-
-iframe {
-  margin-top: 2em;
-  border: none;
-}
-
-/* PIE DE PÁGINA */
-footer {
-  text-align: center;
-  padding: 1em;
-  background-color: #f8f8f8;
-  font-size: 0.8em;
-  margin-top: 2em;
-}
 
 
-.hero img {
-  width: 100%;
-  max-height: 400px;
-  object-fit: cover;
-  border-radius: 10px;
-}
 
-.productos .grid {
-  display: flex;
-  justify-content: center;
-  gap: 2em;
-  padding: 2em;
-}
 
-.item img {
-  width: 250px;
-  border-radius: 8px;
-}
 
-footer {
-  background-color: #222;
-  color: white;
-  text-align: center;
-  padding: 1em;
-  margin-top: 3em;
-}
+
+
+
