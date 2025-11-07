@@ -3,44 +3,109 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ÉLAN Studio | Inicio</title>
+  <title>ÉLAN Studio | Moda contemporánea</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
+  <!-- Encabezado -->
   <header>
     <div class="logo">ÉLAN STUDIO</div>
     <nav>
-      <a href="index.html">Mujer</a>
-      <a href="productos.html">Hombre</a>
-      <a href="#">Accesorios</a>
+      <a href="index.html">Inicio</a>
+      <a href="#mujer">Mujer</a>
+      <a href="#hombre">Hombre</a>
+      <a href="#accesorios">Accesorios</a>
       <a href="contacto.html">Contacto</a>
     </nav>
   </header>
 
-  <main>
-    <section class="hero">
-      <img src="portada.jpg" alt="Colección otoño-invierno ÉLAN Studio">
-      <div class="overlay">
-        <h2>COLECCIÓN OTOÑO–INVIERNO 2025</h2>
-        <a href="productos.html" class="boton">Descubrir</a>
+  <!-- Imagen principal -->
+  <section class="hero">
+    <img src="portada.jpg" alt="Colección otoño-invierno ÉLAN Studio">
+    <div class="overlay">
+      <h2>COLECCIÓN OTOÑO–INVIERNO 2025</h2>
+      <a href="#mujer" class="boton">Descubrir</a>
+    </div>
+  </section>
+
+  <!-- Sección Mujer -->
+  <section id="mujer" class="catalogo">
+    <h2>Mujer</h2>
+    <div class="grid">
+      <div class="item">
+        <img src="mujer1.jpg" alt="Abrigo de lana">
+        <h3>Abrigo de lana natural</h3>
       </div>
-    </section>
+      <div class="item">
+        <img src="mujer2.jpg" alt="Vestido beige">
+        <h3>Vestido beige de lino</h3>
+      </div>
+      <div class="item">
+        <img src="mujer3.jpg" alt="Chaqueta moderna">
+        <h3>Chaqueta urbana</h3>
+      </div>
+    </div>
+  </section>
 
-    <section class="video">
-      <h3>Vídeo de campaña</h3>
-      <video controls width="600">
-        <source src="video.mp4" type="video/mp4">
-        Tu navegador no soporta video.
-      </video>
-    </section>
-  </main>
+  <!-- Sección Hombre -->
+  <section id="hombre" class="catalogo">
+    <h2>Hombre</h2>
+    <div class="grid">
+      <div class="item">
+        <img src="hombre1.jpg" alt="Chaqueta cuero">
+        <h3>Chaqueta de cuero reciclado</h3>
+      </div>
+      <div class="item">
+        <img src="hombre2.jpg" alt="Camisa blanca">
+        <h3>Camisa de lino blanco</h3>
+      </div>
+      <div class="item">
+        <img src="hombre3.jpg" alt="Abrigo largo">
+        <h3>Abrigo largo marrón</h3>
+      </div>
+    </div>
+  </section>
 
+  <!-- Sección Accesorios -->
+  <section id="accesorios" class="catalogo">
+    <h2>Accesorios</h2>
+    <div class="grid">
+      <div class="item">
+        <img src="bolso1.jpg" alt="Bolso de cuero natural">
+        <h3>Bolso de cuero natural</h3>
+      </div>
+      <div class="item">
+        <img src="bufanda1.jpg" alt="Bufanda de lana">
+        <h3>Bufanda de lana orgánica</h3>
+      </div>
+      <div class="item">
+        <img src="gorro1.jpg" alt="Gorro beige">
+        <h3>Gorro beige tejido</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vídeo -->
+  <section class="video">
+    <h3>Campaña otoño-invierno</h3>
+    <video controls width="600">
+      <source src="video.mp4" type="video/mp4">
+      Tu navegador no soporta video.
+    </video>
+  </section>
+
+  <!-- Pie de página -->
   <footer>
-    <p>© 2025 ÉLAN Studio | Moda consciente</p>
+    <p>© 2025 ÉLAN Studio | Moda sostenible y contemporánea</p>
+    <p>
+      <a href="https://www.instagram.com/" target="_blank">Instagram</a> |
+      <a href="https://www.youtube.com/" target="_blank">YouTube</a>
+    </p>
   </footer>
 
 </body>
 </html>
+
 
