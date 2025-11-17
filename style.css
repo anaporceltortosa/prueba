@@ -1,159 +1,105 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* ======== CONTACTO ESTÉTICO ======== */
 
-body {
-  font-family: 'Montserrat', sans-serif;
-  color: #111;
-  background-color: #fff;
-}
-
-/* ======== HEADER ======== */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.2em 4em;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  background-color: white;
-  border-bottom: 1px solid #eee;
-  z-index: 1000;
-}
-
-.logo {
-  font-weight: 700;
-  font-size: 1.3em;
-  letter-spacing: 2px;
-}
-
-nav a {
-  margin: 0 1em;
-  text-decoration: none;
-  color: #000;
-  font-weight: 500;
-  text-transform: uppercase;
-  font-size: 0.9em;
-}
-
-nav a:hover {
-  border-bottom: 2px solid #000;
-}
-
-/* ======== HERO ======== */
-.hero {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.hero img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.overlay {
-  position: absolute;
-  bottom: 20%;
-  left: 10%;
-  color: #fff;
-}
-
-.overlay h2 {
-  font-size: 2.2em;
-  text-transform: uppercase;
-  background: rgba(0,0,0,0.4);
-  display: inline-block;
-  padding: 0.4em 0.8em;
-}
-
-.boton {
-  display: inline-block;
-  margin-top: 1em;
-  padding: 0.6em 1.5em;
-  border: 1px solid #fff;
-  color: #fff;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.boton:hover {
-  background-color: #fff;
-  color: #000;
-}
-
-/* ======== CATÁLOGOS ======== */
-.catalogo {
-  padding: 8em 2em 4em 2em;
+.contacto {
+  padding-top: 8em;
   text-align: center;
+  padding-bottom: 4em;
 }
 
-.catalogo h2 {
-  margin-bottom: 1em;
-  font-size: 1.8em;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+.intro {
+  margin: 0 auto;
+  max-width: 700px;
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 2.5em;
 }
 
-.grid {
+.contacto-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 2em;
-  margin-top: 2em;
+  gap: 3em;
 }
 
-.item {
-  text-align: center;
-}
-
-.item img {
-  width: 300px;
-  height: 400px;
-  object-fit: cover;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
-}
-
-.item img:hover {
-  transform: scale(1.03);
-}
-
-.item h3 {
-  margin-top: 0.5em;
-  font-size: 1em;
-}
-
-/* ======== VIDEO ======== */
-.video {
-  text-align: center;
-  padding: 5em 0;
-}
-
-.video h3 {
-  margin-bottom: 1.5em;
-  font-size: 1.6em;
-}
-
-/* ======== FOOTER ======== */
-footer {
-  background-color: #f8f8f8;
-  text-align: center;
+/* TARJETAS */
+.info-card, .form-card {
+  width: 350px;
+  background: #ffffff;
   padding: 2em;
-  font-size: 0.9em;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  text-align: left;
 }
 
-footer a {
-  color: #000;
+.info-card h3,
+.form-card h3 {
+  margin-bottom: 1em;
+  font-weight: 600;
+}
+
+/* TEXTOS */
+.info-card p {
+  font-size: 0.95em;
+  margin: 0.4em 0;
+}
+
+/* REDES SOCIALES */
+.social-links {
+  margin-top: 1em;
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 1em;
   text-decoration: none;
+  color: #000;
+  font-weight: 500;
 }
 
-footer a:hover {
+.social-links a:hover {
   text-decoration: underline;
+}
+
+/* FORMULARIO */
+form label {
+  font-weight: 600;
+  margin-top: 1em;
+  display: block;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 0.9em;
+  margin-top: 0.5em;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-family: inherit;
+  background: #f9f9f9;
+  transition: 0.2s;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #000;
+  background: #fff;
+}
+
+form button {
+  margin-top: 1.5em;
+  width: 100%;
+  padding: 0.9em;
+  background: #000;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1em;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #333;
 }
 
 
