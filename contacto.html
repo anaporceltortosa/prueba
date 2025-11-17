@@ -9,6 +9,7 @@
 </head>
 <body>
 
+  <!-- ENCABEZADO -->
   <header>
     <div class="logo">ÉLAN STUDIO</div>
     <nav>
@@ -18,28 +19,43 @@
     </nav>
   </header>
 
+  <!-- CONTENIDO PRINCIPAL -->
   <main class="contacto">
     <h2>Contáctanos</h2>
-    <p>¿Tienes dudas o quieres saber más sobre nuestras colecciones? Envíanos un mensaje:</p>
+    <p>Estamos aquí para ayudarte. Si tienes dudas sobre nuestros productos o quieres realizar una consulta, usa el formulario o cualquiera de nuestros datos de contacto.</p>
 
-    <!-- FORMULARIO GOOGLE FORMS -->
-    <iframe 
-      src="https://docs.google.com/forms/d/e/1FAIpQLSfXXXXXXXXXXXXXX/viewform?embedded=true"
-      width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">
-      Cargando…
-    </iframe>
+    <!-- DATOS DE CONTACTO -->
+    <section class="info-contacto">
+      <h3>Información de contacto</h3>
+      <p><strong>Email:</strong> contacto@elanstudio.com</p>
+      <p><strong>Teléfono:</strong> +34 600 123 987</p>
+      <p><strong>Dirección:</strong> Calle Aurora 17, Madrid, España</p>
 
-    <!-- Redes sociales -->
-    <div class="links">
       <h3>Síguenos en redes</h3>
-      <a href="https://www.instagram.com/" target="_blank">Instagram</a> |
-      <a href="https://www.youtube.com/" target="_blank">YouTube</a>
-    </div>
+      <p class="links">
+        <a href="https://instagram.com" target="_blank">Instagram</a> |
+        <a href="https://www.tiktok.com" target="_blank">TikTok</a> |
+        <a href="https://www.youtube.com" target="_blank">YouTube</a>
+      </p>
+    </section>
+
+    <!-- FORMULARIO FICTICIO -->
+    <section class="formulario">
+      <h3>Envíanos un mensaje</h3>
+
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="tuemail@example.com" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
   </main>
 
-  <footer>
-    <p>© 2025 ÉLAN Studio | Moda consciente</p>
-  </footer>
-
-</body>
-</html>
+  <!--
